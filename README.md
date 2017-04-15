@@ -1,4 +1,4 @@
-<img src="https://github.com/mimccio/Mbtn/blob/master/settings/logo/mbtn-logo.png" alt="mbtn logo" title="mbtn" align="middle" width="150" height='150' />
+<img src="https://github.com/mimccio/Mbtn/blob/master/settings/logo/mbtn-logo.png" alt="Mbtn logo" title="mbtn" align="middle" width="150" height='150' />
 
 Easy to use and hightly customisable buttons made with [styled-components](https://github.com/styled-components/styled-components) :nail_care:
 
@@ -62,7 +62,7 @@ bg = {
 
 ##### Pass the context
 
-Pass the `bg` object as the context 
+Pass the `bg` object as the context
 
 ```javascript
 const bg = setBackground('grey', 'lighter')
@@ -102,43 +102,3 @@ For more information on context see the [React docs](https://facebook.github.io/
 | textNuance | PropTypes.string | backgroundColorNuance | text color nuance ( if textColor, choose between nuances) |
 
 ### Exemple
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import Mbtn, { setBackground } from '../m-btn'
-
-const bg = setBackground('grey', 'lighter')
-
-const Wrapper = styled.div`
-  height: 400px;
-  background-color: ${bg.color};
-`
-
-export default class Content extends Component {
-
-  getChildContext () {
-    return {
-      bg: bg
-    }
-  }
-
-  render () {
-    return (
-      <Wrapper>
-		<Mbtn primary bold content='hello' />
-        <Mbtn icon info accent textColor='info' textNuance='dark' content='query_builder' />
-        <Mbtn icon color='#4DD0E1' textColor='PaleVioletRed' content='lock_open' />
-        <Mbtn icon color='#3B5998' iconClass='fa fa-facebook' />
-      </Wrapper>
-    )
-  }
-
-}
-
-Content.childContextTypes = {
-  bg: PropTypes.object
-}
-
-```

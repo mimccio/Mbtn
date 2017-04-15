@@ -1,4 +1,4 @@
-<img src="./settings/logo/mbtn-logo.svg" alt="glamorous logo" title="glamorous" align="middle" width="150" height='150' />
+<img src="https://github.com/mimccio/Mbtn/blob/master/settings/logo/mbtn-logo.svg" alt="mbtn logo" title="mbtn" align="middle" width="150" height='150' />
 
 Easy to use and hightly customisable buttons made with [styled-components](https://github.com/styled-components/styled-components) :nail_care:
 

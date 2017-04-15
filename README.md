@@ -102,3 +102,43 @@ For more information on context see the [React docs](https://facebook.github.io/
 | textNuance | PropTypes.string | backgroundColorNuance | text color nuance ( if textColor, choose between nuances) |
 
 ### Exemple
+
+```javascript
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Mbtn, { setBackground } from '../m-btn'
+
+const bg = setBackground('grey', 'lighter')
+
+const Wrapper = styled.div`
+  height: 400px;
+  background-color: ${bg.color};
+`
+
+export default class Content extends Component {
+
+  getChildContext () {
+    return {
+      bg: bg
+    }
+  }
+
+  render () {
+    return (
+      <Wrapper>
+		<Mbtn primary bold content='hello' />
+        <Mbtn icon info accent textColor='info' textNuance='dark' content='query_builder' />
+        <Mbtn icon color='#4DD0E1' textColor='PaleVioletRed' content='lock_open' />
+        <Mbtn icon color='#3B5998' iconClass='fa fa-facebook' />
+      </Wrapper>
+    )
+  }
+
+}
+
+Content.childContextTypes = {
+  bg: PropTypes.object
+}
+
+```

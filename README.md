@@ -127,7 +127,7 @@ export default class Content extends Component {
   render () {
     return (
       <Wrapper>
-		<Mbtn primary bold content='hello' />
+        <Mbtn primary bold content='hello' />
         <Mbtn icon info accent textColor='info' textNuance='dark' content='query_builder' />
         <Mbtn icon color='#4DD0E1' textColor='PaleVioletRed' content='lock_open' />
         <Mbtn icon color='#3B5998' iconClass='fa fa-facebook' />

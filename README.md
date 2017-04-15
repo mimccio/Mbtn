@@ -11,11 +11,13 @@ Easy to use and hightly customisable buttons made with [styled-components](https
 yarn add styled-components
 ```
 
-
-
 ## User Guide
 
-[TOC]
+- [Usage](#usage)
+	- [Basic](#basic)
+	- [Set Background Color](#set-background-color)
+- [Properties](#properties)
+- [Exemple](#exemple)
 
 ### Usage
 

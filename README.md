@@ -14,9 +14,12 @@ yarn add styled-components
 ## User Guide
 
 - [Usage](#usage)
-	- [Basic](#basic)
-	- [Set Background Color](#set-background-color)
+  - [Basic](#basic)
+  - [Set Background Color](#set-background-color)
 - [Properties](#properties)
+- [Configuration](#configuration)
+  - [setting-values](#setting-values)
+    - [Choices](#choices)
 - [Exemple](#exemple)
 
 ### Usage
@@ -35,6 +38,8 @@ export const (props) => (
 )
 
 ```
+
+
 #### Set Background Color
 
 In order for the shadows to match the background set the color of the background wit the method setBackgroundColor() and pass the context.
@@ -62,6 +67,8 @@ bg = {
 }
 ```
 
+
+
 ##### Pass the context
 
 Pass the `bg` object as the context
@@ -75,6 +82,8 @@ Content.childContextTypes = {
 ```
 
 For more information on context see the [React docs](https://facebook.github.io/react/docs/context.html)
+
+
 
 ### Properties
 
@@ -103,36 +112,107 @@ For more information on context see the [React docs](https://facebook.github.io/
 | textColor  | PropTypes.string | backgroundColor       | text color (choose between colors or css colors) |
 | textNuance | PropTypes.string | backgroundColorNuance | text color nuance ( if textColor, choose between nuances) |
 
+
+
+### Configuration
+
+Change default configurations in m-btn/config directory:
+
+- Color Palette
+
+- Style config
+
+- Background config
+
+###### Accessing default values
+
+You can import the settings and use those value when you need
+
+```javascript
+import { palette } from '../m-btn'
+
+const color = palette.primary.light
+```
+
+
+
+#### Setting values
+
+| Name          | Type             | Exemple                                  | Choices                   |
+| ------------- | ---------------- | ---------------------------------------- | ------------------------- |
+| palette       | PropTypes.object | `const color = palette.primary.main `    | *Colors*                  |
+|               |                  |                                          |                           |
+| font          | PropTypes.object | `const fontFamily = font.heading `       | heading, body             |
+| fontSize      | PropTypes.object | `const myFontSize = fontSize.heading2 `  | *Font Sizes* (px)         |
+| fontSizeValue | PropTypes.object | ``const myFontSize =`${fontSizeValue.bodyBig}px` `` | *Font Sizes* (num)        |
+|               |                  |                                          |                           |
+| spacing       | PropTypes.object | `const mySpace = spacing.small`          | *Size*s                   |
+| diametre      | PropTypes.object | `const mySpace = spacing.small`          | *Size*s (no huge or tiny) |
+| baseRadius    | PropTypes.string | `const myRadius = baseRadius`            |                           |
+|               |                  |                                          |                           |
+| setBackground | PropTypes.func   | `const bg = setBackground('primary', 'light')` |                           |
+|               |                  |                                          |                           |
+
+
+
+##### Choices
+
+| Colors  | Nuances | Font Sizes  | Sizes |
+| ------- | ------- | ----------- | ----- |
+| primary | main    | heading1    | base  |
+| info    | light   | heading2    | small |
+| warning | lighter | heading3    | big   |
+| success | dark    | heading4    | tiny  |
+| danger  | darker  | bodyHuge    | huge  |
+| grey    |         | bodyBig     |       |
+|         |         | body        |       |
+|         |         | bodySmall   |       |
+|         |         | bodyTiny    |       |
+|         |         | rem.*Sizes* |       |
+
+
 ### Exemple
 
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Mbtn, { setBackground } from '../m-btn'
+import Mbtn, { setBackground, fontSize, palette } from '../m-btn'
 
 const bg = setBackground('grey', 'lighter')
 
 const Wrapper = styled.div`
-  height: 400px;
   background-color: ${bg.color};
+  font-size: ${fontSize.heading1};
+  color: ${palette.info.light};
 `
 
 export default class Content extends Component {
 
   getChildContext () {
-    return {
-      bg: bg
-    }
+    return { bg: bg }
   }
 
   render () {
     return (
       <Wrapper>
+      	<p>I love Styled Components</p>
         <Mbtn primary bold content='hello' />
-        <Mbtn icon info accent textColor='info' textNuance='dark' content='query_builder' />
-        <Mbtn icon color='#4DD0E1' textColor='PaleVioletRed' content='lock_open' />
-        <Mbtn icon color='#3B5998' iconClass='fa fa-facebook' />
+        <Mbtn
+          icon
+          info
+          accent
+          textColor='info'
+          textNuance='dark'
+          content='query_builder'
+        />
+        <Mbtn
+          icon
+          color='#4dd0e1'
+          textColor='PaleVioletRed'
+          content='lock_open'
+        />
+        <Mbtn icon warning dark iconClass='fa fa-facebook' />
       </Wrapper>
     )
   }
@@ -142,5 +222,4 @@ export default class Content extends Component {
 Content.childContextTypes = {
   bg: PropTypes.object
 }
-
 ```

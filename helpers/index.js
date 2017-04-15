@@ -4,6 +4,7 @@ import defineContent from './defineContent'
 import defineFontWeight from './defineFontWeight'
 import defineIconClass from './defineIconClass'
 import defineTextColor from './defineTextColor'
+import defineRotationDirection from './defineRotationDirection'
 import {
   defineShadowColorLight,
   defineShadowColorDark
@@ -17,5 +18,6 @@ export {
   defineIconClass,
   defineTextColor,
   defineShadowColorLight,
-  defineShadowColorDark
+  defineShadowColorDark,
+  defineRotationDirection
 }

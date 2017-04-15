@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg4554"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="mbtn-logo.svg">
+  <defs
+     id="defs4556" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-48.369116"
+     inkscape:cy="619.87801"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4559">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#b200ff;stroke-width:9.25854874;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
+       id="path3338-6"
+       sodipodi:type="arc"
+       sodipodi:cx="624.14917"
+       sodipodi:cy="570.47394"
+       sodipodi:rx="104.27485"
+       sodipodi:ry="106.86813"
+       sodipodi:start="4.7410406"
+       sodipodi:end="1.5568787"
+       d="M 627.1364,463.64967 A 104.27485,106.86813 0 0 1 728.42119,571.26123 104.27485,106.86813 0 0 1 625.60038,677.33172"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#b200ff;stroke-width:9.37;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99215686"
+       id="path3338-7"
+       sodipodi:type="arc"
+       sodipodi:cx="107.52181"
+       sodipodi:cy="570.50354"
+       sodipodi:rx="101.61681"
+       sodipodi:ry="106.78377"
+       sodipodi:start="1.5513684"
+       sodipodi:end="4.7525135"
+       d="M 109.49589,677.26716 A 101.61681,106.78377 0 0 1 19.497592,623.85631 101.61681,106.78377 0 0 1 20.567159,515.2479 101.61681,106.78377 0 0 1 111.59804,463.80572"
+       sodipodi:open="true" />
+    <rect
+       style="fill:#b300ff;fill-opacity:0.99033813;stroke:none;stroke-width:1.88;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4464-5"
+       width="517.04248"
+       height="9.3723717"
+       x="108.78481"
+       y="672.58984" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:87.5px;line-height:120.00000477%;font-family:Raleway;-inkscape-font-specification:'Raleway, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#b200ff;fill-opacity:0.99215686;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="175.87531"
+       y="598.0683"
+       id="text4481"
+       sodipodi:linespacing="120%"><tspan
+         sodipodi:role="line"
+         id="tspan4483"
+         x="175.87531"
+         y="598.0683">&lt;Mbtn /&gt;</tspan></text>
+    <rect
+       style="fill:#b300ff;fill-opacity:0.99033813;stroke:none;stroke-width:1.88;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4464-5-3"
+       width="517.04248"
+       height="9.3723717"
+       x="110.79803"
+       y="459.09125" />
+  </g>
+</svg>

@@ -5,11 +5,10 @@ import {
   defineShadowColorDark
 } from '../helpers'
 
-const bg = (color, nuance) => {
+const setBackground = (color, nuance) => {
   const bgColor = defineBackgroundColor(color, nuance, defaultBackgroundConfig)
   const shadowLight = defineShadowColorLight(color, nuance)
   const shadowDark = defineShadowColorDark(color, nuance)
-  console.log(color, nuance)
   return {
     color: bgColor,
     shadow: {
@@ -19,4 +18,4 @@ const bg = (color, nuance) => {
   }
 }
 
-export default bg
+export default setBackground

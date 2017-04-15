@@ -14,7 +14,7 @@ import {
 } from './settings/styleSettings'
 
 // import background color function
-import bg from './settings/backgroundSettings'
+import setBackground from './settings/backgroundSettings'
 
 // import Mbtn
 import Mbtn from './button/Mbtn'
@@ -29,5 +29,5 @@ export {
   spacing,
   baseRadius,
   diametre,
-  bg
+  setBackground
 }

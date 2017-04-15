@@ -12,9 +12,22 @@ const defineDefaultBackgroundColor = (defaultBackground) => {
   }
 }
 
- const defineBackgroundColor = (color, nuance, defaultBackground) => {
-  if (color) {
-    if (nuance) {
+const defineBackgroundColor = (color, nuance, defaultBackground) => {
+  if (
+    color === 'primary'
+    || color === 'info'
+    || color === 'warning'
+    || color === 'success'
+    || color === 'danger'
+    || color === 'grey'
+  ) {
+    if (
+      nuance === 'main'
+      || nuance === 'light'
+      || nuance === 'lighter'
+      || nuance === 'dark'
+      || nuance === 'darker'
+    ) {
       return palette[color][nuance]
     } else {
       return palette[color]['lighter']

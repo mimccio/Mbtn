@@ -35,7 +35,6 @@ const defineShadowNuanceDark = (nuance) => {
 const defineShadowColorLight = (color, nuance) => {
   const shadowNuanceLight = defineShadowNuanceLight(nuance)
   const shadowColorLight = color ? palette[color][shadowNuanceLight] : palette.grey.light
-  console.log(color, nuance)
   return shadowColorLight
 }
 

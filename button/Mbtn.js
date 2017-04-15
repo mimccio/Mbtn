@@ -4,15 +4,12 @@ import PropTypes from 'prop-types'
 
 import StandardButton from './StandardButton'
 import IconButton from './IconButton'
-import { defaultTextColor } from '../index'
 import {
   defineColor,
   defineTextColor,
   defineIconClass,
   defineContent,
-  defineFontWeight,
-  defineShadowColorLight,
-  defineShadowColorDark
+  defineFontWeight
 } from '../helpers'
 
 export default class Mbtn extends Component {
@@ -23,9 +20,9 @@ export default class Mbtn extends Component {
     const iconClassName = defineIconClass(this.props)
     const content = defineContent(this.props)
     const fontWeigth = defineFontWeight(this.props)
-    const shadowColorLight = this.context.shadowColorLight
-    const shadowColorDark = this.context.shadowColorDark
-    const textColor = defineTextColor(this.props, this.context.color)
+    const shadowColorLight = this.context.bg.shadow.light
+    const shadowColorDark = this.context.bg.shadow.dark
+    const textColor = defineTextColor(this.props, this.context.bg.color)
 
     const buttonType = this.props.icon ? IconButton : StandardButton
 
@@ -42,12 +39,13 @@ export default class Mbtn extends Component {
       text-shadow:
         0 1px 2px ${shadowColorDark},
         0 2px 5px ${shadowColorLight};
+
     }
 
     &:hover:after {
       box-shadow:
-        -2px 2px 5px ${shadowColorDark},
-        -2px 5px 20px ${shadowColorLight};
+        0 0 4px ${shadowColorDark},
+        0 4px 10px ${shadowColorLight};
       border-color: ${color};
     }
 
@@ -65,7 +63,5 @@ export default class Mbtn extends Component {
 }
 
 Mbtn.contextTypes = {
-  color: PropTypes.string,
-  shadowColorLight: PropTypes.string,
-  shadowColorDark: PropTypes.string
+  bg: PropTypes.object
 }

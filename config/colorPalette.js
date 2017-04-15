@@ -2,59 +2,59 @@
 // Material color Palette : https://material.io/guidelines/style/color.html#color-color-palette
 
 const primary = '#673ab7' // DeepPurple500
-const primaryLight = '#9575CD '// DeepPurple300
-const primaryLighter = '#D1C4E9' // DeepPurple100
-const primaryDark = '#4527A0' // DeepPurple800
-const primaryDarker = '#311B92' // DeepPurple900
+const primaryLight = '#9575cd '// DeepPurple300
+const primaryLighter = '#d1C4e9' // DeepPurple100
+const primaryDark = '#4527a0' // DeepPurple800
+const primaryDarker = '#311b92' // DeepPurple900
 
-const primaryAccent = '#651FFF' // DeepPurpleA400
-const primaryAccentLight = '#7C4DFF' // DeepPurpleA200
-const primaryAccentDark = '#6200EA' // DeepPurpleA700
+const primaryAccent = '#651fff' // DeepPurpleA400
+const primaryAccentLight = '#7c4dff' // DeepPurpleA200
+const primaryAccentDark = '#6200ea' // DeepPurpleA700
 
 const info = '#009688' // Teal500
-const infoLight = '#4DB6AC '// Teal300
-const infoLighter = '#B2DFDB' // Teal100
-const infoDark = '#00695C' // Teal800
-const infoDarker = '#004D40' // Teal900
+const infoLight = '#4db6ac '// Teal300
+const infoLighter = '#b2dfbd' // Teal100
+const infoDark = '#00695c' // Teal800
+const infoDarker = '#004d40' // Teal900
 
-const infoAccent = '#1DE9B6' // TealA400
-const infoAccentLight = '#64FFDA' // TealA200
-const infoAccentDark = '#00BFA5' // TealA700
+const infoAccent = '#1De9b6' // TealA400
+const infoAccentLight = '#64ffda' // TealA200
+const infoAccentDark = '#00Bfa5' // TealA700
 
-const warning = '#FF5722' // DeepOrange500
-const warningLight = '#FF8A65 '// DeepOrange300
-const warningLighter = '#FFCCBC' // DeepOrange100
-const warningDark = '#D84315' // DeepOrange800
-const warningDarker = '#BF360C' // DeepOrange900
+const warning = '#ff5722' // DeepOrange500
+const warningLight = '#ff8a65 '// DeepOrange300
+const warningLighter = '#ffccbc' // DeepOrange100
+const warningDark = '#d84315' // DeepOrange800
+const warningDarker = '#bf360c' // DeepOrange900
 
-const warningAccent = '#FF3D00' // DeepOrangeA400
-const warningAccentLight = '#FF6E40' // DeepOrangeA200
-const warningAccentDark = '#DD2C00' // DeepOrangeA700
+const warningAccent = '#ff3d00' // DeepOrangeA400
+const warningAccentLight = '#ff6e40' // DeepOrangeA200
+const warningAccentDark = '#dd2c00' // DeepOrangeA700
 
-const success = '#4CAF50' // Green500
-const successLight = '#81C784 '// Green300
-const successLighter = '#C8E6C9 '// Green100
-const successDark = '#2E7D32' // Green800
-const successDarker = '#1B5E20' // Green900
+const success = '#4caf50' // Green500
+const successLight = '#81c784 '// Green300
+const successLighter = '#c8e6c9 '// Green100
+const successDark = '#2e7d32' // Green800
+const successDarker = '#1b5e20' // Green900
 
-const successAccent = '#00E676' // GreenA400
-const successAccentLight = '#69F0AE' // GreenA200
-const successAccentDark = '#00C853' // GreenA700
+const successAccent = '#00e676' // GreenA400
+const successAccentLight = '#69f0ae' // GreenA200
+const successAccentDark = '#00c853' // GreenA700
 
-const danger = '#F44336' // Red500
-const dangerLight = '#E57373 '// Red300
-const dangerLighter = '#FFCDD2 '// Red100
-const dangerDark = '#C62828' // Red800
-const dangerDarker = '#B71C1C' // Red890
+const danger = '#f44336' // Red500
+const dangerLight = '#e57373 '// Red300
+const dangerLighter = '#ffcdd2 '// Red100
+const dangerDark = '#c62828' // Red800
+const dangerDarker = '#b71c1c' // Red890
 
-const dangerAccent = '#FF1744' // RedA400
-const dangerAccentLight = '#FF5252' // RedA200
-const dangerAccentDark = '#D50000' // RedA700
+const dangerAccent = '#ff1744' // RedA400
+const dangerAccentLight = '#ff5252' // RedA200
+const dangerAccentDark = '#d50000' // RedA700
 
-const grey = '#607D8B' // BlueGrey500
-const greyLight = '#90A4AE' // BlueGrey300
-const greyLighter = '#CFD8DC' // BlueGrey100
-const greyDark = '#37474F' // BlueGrey800
+const grey = '#607d8b' // BlueGrey500
+const greyLight = '#90a4ae' // BlueGrey300
+const greyLighter = '#cfd8dc' // BlueGrey100
+const greyDark = '#37474f' // BlueGrey800
 const greyDarker = '#263238' // BlueGrey900
 
 const palette = {
@@ -81,7 +81,7 @@ const palette = {
     accent: {
       main: infoAccent,
       light: infoAccentLight,
-      dark: infoDark
+      dark: infoAccentDark
     }
   },
   warning: {
@@ -94,7 +94,7 @@ const palette = {
     accent: {
       main: warningAccent,
       light: warningAccentLight,
-      dark: warningAccentDark,
+      dark: warningAccentDark
     }
   },
   success: {
@@ -107,7 +107,7 @@ const palette = {
     accent: {
       main: successAccent,
       light: successAccentLight,
-      dark: successAccentDark,
+      dark: successAccentDark
     }
   },
   danger: {
@@ -120,7 +120,7 @@ const palette = {
     accent: {
       main: dangerAccent,
       light: dangerAccentLight,
-      dark: dangerAccentDark,
+      dark: dangerAccentDark
     }
   },
   grey: {
@@ -129,7 +129,7 @@ const palette = {
     light: greyLight,
     lighter: greyLighter,
     dark: greyDark,
-    darker: greyDarker,
+    darker: greyDarker
   }
 }
 

@@ -35,20 +35,13 @@ const defineNuance = (props) => {
 }
 
 const defineColor = (props) => {
-  // log text
-  const logText = `
-    Content: '${props.content}',
-    ColorPalette: '${palette.name}',
-    Nuance: '${nuance}', Color: '${color}'
-  `
-
   let colorPalette = defineColorPalette(props)
   let nuance = defineNuance(props)
   let color = palette.grey.main
 
   if (props.color) {
     color = props.color
-    console.log(logText)
+
     return color
   } else if (!colorPalette) {
     colorPalette = palette.grey
@@ -61,13 +54,11 @@ const defineColor = (props) => {
     } else {
       color = accentColorPalette.main
     }
-    console.log(`${logText}, accent`)
     return color
   } else if (nuance === 'darker') {
     nuance = 'dark'
   }
   color = colorPalette[nuance]
-  console.log(logText)
   return color
 }
 

@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 import { diametre, fontSize } from '../settings/styleSettings'
 import GlobalButton from './GlobalButton'
+import { defineRotationDirection } from '../helpers'
+
+const rotationDirection = defineRotationDirection(1, 3) === 1 ? '-45deg' : '45deg'
 
 const IconButton = styled(GlobalButton)`
   font-size: ${fontSize.rem.small};
@@ -12,9 +15,9 @@ const IconButton = styled(GlobalButton)`
     transform .5s ease;
 
   &:hover {
-    transform: rotate(-45deg);
+    transform: rotate(${rotationDirection});
   }
-
+  
   &:before {
     border-radius: 50%;
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+import palette from '../config/colorPalette'
 import StandardButton from './StandardButton'
 import IconButton from './IconButton'
 import {
@@ -20,8 +21,8 @@ export default class Mbtn extends Component {
     const iconClassName = defineIconClass(this.props)
     const content = defineContent(this.props)
     const fontWeigth = defineFontWeight(this.props)
-    const shadowColorLight = this.context.bg.shadow.light
-    const shadowColorDark = this.context.bg.shadow.dark
+    const shadowColorLight = this.context.bg.shadow.light || palette.grey.light
+    const shadowColorDark = this.context.bg.shadow.dark || palette.grey.main
     const textColor = defineTextColor(this.props, this.context.bg.color)
 
     const buttonType = this.props.icon ? IconButton : StandardButton

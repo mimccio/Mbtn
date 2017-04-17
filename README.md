@@ -5,14 +5,11 @@
 
 Easy to use and hightly customisable button made with [styled-components](https://github.com/styled-components/styled-components) :nail_care:
 
-
-
-1. Copy the repo and paste it in your src folder
-2. Add styled-components to package.json
-
 ```
-yarn add styled-components
+yarn add m-btn
 ```
+
+[![npm](https://img.shields.io/npm/v/m-btn.svg)](https://www.npmjs.com/package/m-btn)
 
 ## User Guide
 
@@ -24,6 +21,7 @@ yarn add styled-components
   - [setting-values](#setting-values)
     - [Choices](#choices)
 - [Exemple](#exemple)
+- [Easy Start](#easy-start)
 
 ### Usage
 
@@ -31,7 +29,7 @@ yarn add styled-components
 
 ```javascript
 import React from 'react'
-import Mbtn from '../m-btn'
+import Mbtn from 'm-btn'
 
 export const (props) => (
 	<div>
@@ -45,12 +43,11 @@ export const (props) => (
 
 #### Set Background Color
 
-In order for the shadows to match the background set the color of the background wit the method setBackgroundColor() and pass the context.
+In order for the shadows to match the background set the color of the background with the method setBackgroundColor() and pass the context.
 
 ##### Set the color of the background with setBackgroundColor().
 
 setBackgroundColor() accept two arguments:
-
 - color
 - nuance
 
@@ -78,6 +75,8 @@ Pass the `bg` object as the context
 
 ```javascript
 const bg = setBackground('grey', 'lighter')
+
+const backgroundColor = bg.color
 
 Content.childContextTypes = {
   bg: PropTypes.object
@@ -132,7 +131,7 @@ Change default configurations in m-btn/config directory:
 You can import the settings and use those value when you need
 
 ```javascript
-import { palette } from '../m-btn'
+import { palette } from 'm-btn'
 
 const color = palette.primary.light
 ```
@@ -180,13 +179,13 @@ const color = palette.primary.light
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import Mbtn, { setBackground, fontSize, palette } from '../m-btn'
+import Mbtn, { setBackground, fontSize, palette } from 'm-btn'
 
 const bg = setBackground('grey', 'lighter')
 
 const Wrapper = styled.div`
   background-color: ${bg.color};
-  font-size: ${fontSize.heading1};
+  font-size: ${fontSize.bodyBig};
   color: ${palette.info.light};
 `
 
@@ -200,7 +199,10 @@ export default class Content extends Component {
     return (
       <Wrapper>
       	<p>I love Styled Components</p>
-        <Mbtn primary bold content='hello' />
+        <Mbtn
+          primary
+          bold
+          content='hello' />
         <Mbtn
           icon
           info
@@ -215,7 +217,11 @@ export default class Content extends Component {
           textColor='PaleVioletRed'
           content='lock_open'
         />
-        <Mbtn icon warning dark iconClass='fa fa-facebook' />
+        <Mbtn
+        icon
+        warning
+        dark
+        iconClass='fa fa-facebook' />
       </Wrapper>
     )
   }
@@ -225,4 +231,116 @@ export default class Content extends Component {
 Content.childContextTypes = {
   bg: PropTypes.object
 }
+```
+### Easy Start
+
+1. [Create React App](#create-react-app)
+2. [Add Mbtn to package.json](#add-mbtn-to-package.json)
+3. [Add icons cdn](#add-icons-cdn)
+4. [Replace App.js](#replace-app.js)
+5. [Start your App](#start-your-app)
+
+#### Create React App
+
+If you d'ont have [create-react-app](https://github.com/facebookincubator/create-react-app) installed globaly go ahead an install it :
+
+```
+npm install -g create-react-app
+```
+
+##### Quick Overview
+
+```
+cd my-projects
+create-react-app my-app
+cd my-app/
+npm start
+```
+
+For more info see the [docs](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md)
+
+#### Add Mbtn to package.json
+
+```
+npm i m-btn --save
+```
+
+or
+
+```
+yarn add m-btn
+```
+
+#### Add icons cdn
+
+Add Material Icons cdn in public/index.html:
+
+```javascript
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+if you want to use FontAwesome or an other icon provider you have to add their cdn too.
+
+#### Replace App.js
+
+Remove what's in App.js, copy and paste the code below in App.js
+
+```javascript
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import Mbtn, { setBackground, fontSize, palette } from 'm-btn'
+
+const bg = setBackground('grey', 'lighter')
+
+const Wrapper = styled.div`
+  background-color: ${bg.color};
+  color: ${palette.info.light};
+  font-size: ${fontSize.bodyBig};
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  align-items: center;
+`
+
+export default class Content extends Component {
+
+  getChildContext () {
+    return { bg: bg }
+  }
+
+  render () {
+    return (
+      <Wrapper>
+      	<p>I love Mbtn and Styled Components</p>
+        <Mbtn
+          primary
+          bold
+          content='Hello' />
+        <Mbtn
+          icon
+          info
+          accent
+          textColor='info'
+          textNuance='dark'
+          content='query_builder'
+        />
+      </Wrapper>
+    )
+  }
+
+}
+
+Content.childContextTypes = {
+  bg: PropTypes.object
+}
+```
+##### Start your App
+
+If it's not already running start your app:
+
+```
+npm Start
 ```

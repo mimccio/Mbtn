@@ -1,13 +1,16 @@
-<img src="https://github.com/mimccio/Mbtn/blob/master/settings/logo/mbtn-logo.png" alt="Mbtn logo" title="mbtn" align="middle" width="150" height='150' />
+<a href='http://mbtn.surge.sh/'>
+  <img alt="styled-components" src="https://raw.githubusercontent.com/mimccio/Mbtn/master/logo/mbtn-logo.png" height="150px" />
+</a>
 
-Easy to use and hightly customisable buttons made with [styled-components](https://github.com/styled-components/styled-components) :nail_care:
+
+Easy to use and hightly customisable button made with [styled-components](https://github.com/styled-components/styled-components) :nail_care:
 
 
 
 1. Copy the repo and paste it in your src folder
 2. Add styled-components to package.json
 
-```b
+```
 yarn add styled-components
 ```
 

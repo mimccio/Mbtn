@@ -1,0 +1,42 @@
+{
+  "name": "m-btn",
+  "version": "1.0.0",
+  "description": "easy to use library for customisable buttons",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src/index.js index.js/",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimccio/Mbtn.git"
+  },
+  "keywords": [
+    "buttons",
+    "styled-components",
+    "react"
+  ],
+  "author": "mimccio",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mimccio/Mbtn/issues"
+  },
+  "homepage": "https://github.com/mimccio/Mbtn#readme",
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "styled-components": "^1.4.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "standard": "^10.0.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-addons-test-utils": "^15.4.1",
+    "jest": "^19.0.2"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0"
+  }
+}

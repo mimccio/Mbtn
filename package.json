@@ -2,10 +2,11 @@
   "name": "m-btn",
   "version": "1.0.4",
   "description": "easy to use library for customisable buttons",
-  "main": "./dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
-    "build": "babel src -o dist/index.js",
+    "prebuild": "rm -rf lib/*",
+    "build": "babel --out-dir lib src",
     "prepublish": "npm run build"
   },
   "repository": {

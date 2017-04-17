@@ -2,7 +2,7 @@
 import palette from './config/colorPalette'
 
 // import font family
-import { font } from '../m-btn/settings/styleSettings'
+import { font } from './settings/styleSettings'
 
 // import styles settings
 import {

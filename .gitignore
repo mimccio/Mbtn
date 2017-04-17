@@ -17,4 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # npm dist
-# /dist
+/lib
+
+.npmignore

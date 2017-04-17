@@ -314,7 +314,7 @@ export default class Content extends Component {
   render () {
     return (
       <Wrapper>
-      	<p>I love Mbtn and Styled Components</p>
+      	<p>I love &lt;Mbtn /&gt; and Styled Components</p>
         <Mbtn
           primary
           bold
@@ -325,7 +325,7 @@ export default class Content extends Component {
           accent
           textColor='info'
           textNuance='dark'
-          content='query_builder'
+          content='favorite'
         />
       </Wrapper>
     )

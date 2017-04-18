@@ -5,14 +5,14 @@ import GlobalButton from './GlobalButton'
 
 const StandardButton = styled(GlobalButton)`
   font-size: ${fontSize.bodySmall};
-  width: 4.2rem;
+  width: 4.6rem;
   height: 1.6rem;
   border-radius: ${baseRadius};
   transition:
     transform .2s ease;
 
   &:hover {
-    transform: scale(1.1, 1);
+    transform: scale(1.1);
   }
 
   &:before {
@@ -30,7 +30,7 @@ const StandardButton = styled(GlobalButton)`
     height: 2.4rem;
 
     &:hover {
-      transform: scale(1.1, 1);
+      transform: scale(1);
     }
 
   }
@@ -42,7 +42,7 @@ const StandardButton = styled(GlobalButton)`
     height: 2.9rem;
 
     &:hover {
-      transform: scale(1.1, 1);
+      transform: scale(1);
     }
   }
 `

@@ -11,13 +11,14 @@ const IconButton = styled(GlobalButton)`
   height: ${diametre.small};
   width: ${diametre.small};
   border-radius: 50%;
+  padding: 0;
   transition:
     transform .5s ease;
 
   &:hover {
     transform: rotate(${rotationDirection});
   }
-  
+
   &:before {
     border-radius: 50%;
   }
@@ -25,8 +26,6 @@ const IconButton = styled(GlobalButton)`
   &:after {
     border-radius: 50%;
   }
-
-
 
   @media (min-width:641px) {
     font-size: ${fontSize.rem.base};

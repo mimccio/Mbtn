@@ -145,7 +145,6 @@ const color = palette.primary.light
 | ------------- | ---------------- | ---------------------------------------- | ------------------------- |
 | palette       | PropTypes.object | `const color = palette.primary.main `    | *Colors*                  |
 |               |                  |                                          |                           |
-| font          | PropTypes.object | `const fontFamily = font.heading `       | heading, body             |
 | fontSize      | PropTypes.object | `const myFontSize = fontSize.heading2 `  | *Font Sizes* (px)         |
 | fontSizeValue | PropTypes.object | ``const myFontSize =`${fontSizeValue.bodyBig}px` `` | *Font Sizes* (num)        |
 |               |                  |                                          |                           |

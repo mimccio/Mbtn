@@ -40,11 +40,11 @@ const GlobalButton = styled.button`
   }
 
   @media (min-width:641px) {
-		margin: 5px;
+    margin: 5px;
   }
 
   @media (min-width:881px) {
-		margin: 8px;
+    margin: 8px;
 
     &:after {
       border-width: 3px;

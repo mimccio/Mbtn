@@ -1,9 +1,3 @@
-// Fonts
-export const fontConfig = {
-  body: 'Lato, sans-serif',
-  heading: 'Raleway, sans-serif'
-}
-
 // Fonts Sizes
 export const fontSizeConfig = {
   heading1: 52,

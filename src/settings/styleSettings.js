@@ -1,6 +1,4 @@
-import { fontConfig, fontSizeConfig, baseSpacingConfig, baseRadiusConfig, diametreConfig } from '../config/styleConfig'
-
-export const font = fontConfig
+import { fontSizeConfig, baseSpacingConfig, baseRadiusConfig, diametreConfig } from '../config/styleConfig'
 
 // Font Size
 export const fontSizeValue = {

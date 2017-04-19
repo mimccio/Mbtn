@@ -1,9 +1,6 @@
 // import color palette
 import palette from './config/colorPalette'
 
-// import font family
-import { font } from './settings/styleSettings'
-
 // import styles settings
 import {
   fontSizeValue,
@@ -23,7 +20,6 @@ import Mbtn from './button/Mbtn'
 export default Mbtn
 export {
   palette,
-  font,
   fontSizeValue,
   fontSize,
   spacing,

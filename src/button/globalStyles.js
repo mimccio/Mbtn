@@ -8,11 +8,11 @@ injectGlobal`
   }
 
   * {
-  box-sizing: inherit;
+  box-sizing: content-box;
   }
 
   *::before, ::after {
-  box-sizing: inherit;
+  box-sizing: content-box;
   }
 
 `

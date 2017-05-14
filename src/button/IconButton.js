@@ -4,10 +4,11 @@ import { diametre, fontSize } from '../settings/styleSettings'
 import GlobalButton from './GlobalButton'
 import { defineRotationDirection } from '../helpers'
 
-const rotationDirection = defineRotationDirection(1, 3) === 1 ? '-45deg' : '45deg'
+const rotationDirection = defineRotationDirection(1, 3) === 1 ? '-90deg' : '90deg'
 
 const IconButton = styled(GlobalButton)`
   font-size: ${fontSize.rem.small};
+  text-rendering: optimizeLegibility;
   height: ${diametre.small};
   width: ${diametre.small};
   border-radius: 50%;

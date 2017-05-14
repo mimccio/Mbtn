@@ -1,8 +1,11 @@
 import styled from 'styled-components'
+// global styles
+import '../styles/reset.css'
+import '../styles/normalize.css'
+import '../styles/box-sizing.css'
 
 const GlobalButton = styled.button`
 
-  box-sizing: border-box;
   text-decoration: none;
   position: relative;
   margin: 3px;
@@ -18,8 +21,6 @@ const GlobalButton = styled.button`
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -2px;
-    left: -2px;
     border: solid 2px;
     border-color: transparent;
     transform: scale(.7);

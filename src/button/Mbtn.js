@@ -14,7 +14,6 @@ import {
 } from '../helpers'
 
 export default class Mbtn extends Component {
-
   render () {
     const color = defineColor(this.props)
 

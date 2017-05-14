@@ -1,9 +1,11 @@
 import styled from 'styled-components'
-// global styles
-import globalStyles from './globalStyles'
+
+// eslint-disable-next-line
+import globalStyles from '../styles/globalStyles'
 
 const GlobalButton = styled.button`
 
+  box-sizing: border-box;
   text-decoration: none;
   position: relative;
   margin: 3px;
@@ -15,10 +17,13 @@ const GlobalButton = styled.button`
   }
 
   &:after {
+    box-sizing: border-content;
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
+    top: -2px;
+    left: -2px;
     border: solid 2px;
     border-color: transparent;
     transform: scale(.7);

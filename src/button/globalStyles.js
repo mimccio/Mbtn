@@ -4,7 +4,7 @@ import { injectGlobal } from 'styled-components'
 injectGlobal`
 
   html {
-  box-sizing: border-box;
+  box-sizing: content-box;
   }
 
   * {

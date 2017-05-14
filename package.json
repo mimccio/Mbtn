@@ -1,6 +1,6 @@
 {
   "name": "m-btn",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "easy to use library for customisable buttons",
   "main": "lib/index.js",
   "scripts": {

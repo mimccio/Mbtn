@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 // eslint-disable-next-line
-import globalStyles from '../styles/globalStyles'
+import globalStyles from './globalStyles'
 
 const GlobalButton = styled.button`
 

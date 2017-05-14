@@ -34,9 +34,9 @@ import Mbtn from 'm-btn'
 
 export const (props) => (
 	<div>
-  		<Mbtn success light content='Save'/>
-  		<Mbtn danger light content='Cancel'/>
-  	</div>
+  	<Mbtn success light content='Save'/>
+  	<Mbtn danger light content='Cancel'/>
+  </div>
 )
 
 ```

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 // global styles
-import '../styles/reset.css'
-import '../styles/normalize.css'
-import '../styles/box-sizing.css'
+import globalStyles from './globalStyles'
 
 const GlobalButton = styled.button`
 

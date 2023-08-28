@@ -21,7 +21,7 @@ yarn add m-btn
 - [Configuration](#configuration)
   - [setting-values](#setting-values)
     - [Choices](#choices)
-- [Exemple](#exemple)
+- [Example](#example)
 - [Easy Start](#easy-start)
 
 ### Usage
